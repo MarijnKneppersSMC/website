@@ -2,6 +2,7 @@ function embedHTML() {
 
 	// get a list of all HTML elements
 	let elements = document.getElementsByTagName("*");
+	console.log(elements)
 
 	// start a loop that kiios over all html elements
 	for (let i = 0; i < elements.length; i++) {
