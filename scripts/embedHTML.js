@@ -1,7 +1,15 @@
-function includeHTML() {
+function embedHTML() {
+
+	// get a list of all HTML elements
 	let elements = document.getElementsByTagName("*");
+
+	// start a loop that kiios over all html elements
 	for (let i = 0; i < elements.length; i++) {
+
+		// get the element at the current point in the loop
 		let element = elements[i];
+
+		// check if the element has the "embed-html" attribute and if so, add it to the inner html of the div
 		if (element.hasAttribute("embed-html")) {
 
 			let file = element.getAttribute("embed-html");
@@ -12,7 +20,7 @@ function includeHTML() {
 					if (this.status == 200) { element.innerHTML = this.responseText; }
 					if (this.status == 404) { element.innerHTML = "Page not found."; }
 					element.removeAttribute("embed-html");
-					includeHTML();
+					embedHTML();
 				}
 			}
 			xhttp.open("GET", file, true);
