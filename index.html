@@ -3,13 +3,28 @@
 
 <head>
 	<title>Machine Learning</title>
-	<script src="scripts/embedHTML.js"></script>
-	<script src="scripts/popUp.js"></script>
+	<script src="scripts/embedHTML.js">
+
+	</script>
+	<script src="scripts/popUp.js">
+
+	</script>
+	<script src="scripts/underline.js">
+
+	</script>
 	<link rel="stylesheet" href="stylesheets/main.css" />
 </head>
 
 <body>
-	<div id="aboutUs" embed-html="aboutUs.html"></div>
+	<h1>Machine Learning</h1>
+	<div id="buttons">
+		<h2 class="underlineable" onclick="showPopUps(`about-us`); updateUnderline('about-us-underline')">About Us<span id="about-us-underline" class="underline" style="background-color:#90c53f;"></span></h2>
+		<h2 class="underlineable" onclick="showPopUps(`limitations`); updateUnderline('limitations-underline')">Limitations<span class="underline" id="limitations-underline" style="background-color:#90c53f;"></span></h2>
+		<h2 class="underlineable" onclick="showPopUps(`subject-two`); updateUnderline('subject-two-underline')">Subject Two<span class="underline" id="subject-two-underline" style="background-color:#90c53f;"></span></h2>
+	</div>
+	<div id="about-us" embed-html="aboutUs.html" class="popup"></div>
+	<div id="limitations" embed-html="documents/text/limitations.html" class="popup"></div>
+	<div id="subject-two" embed-html="documents/text/subjectTwo.html" class="popup"></div>
 	<div id="general-info" embed-html="documents/text/generalInfo.html" />
 	<script>
 		embedHTML()

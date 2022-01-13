@@ -1,6 +1,6 @@
 let shownElementId = null;
 
-function showPopUps(id) {
+function showPopUps(id, underlineId) {
 	let element = document.getElementById(id);
 	if(shownElementId != null)
 	{
