@@ -1,9 +1,25 @@
+let shownElementId = null;
+
 function showPopUps(id) {
 	let element = document.getElementById(id);
-	if (!element.classList.contains('shown')) {
-		element.classList.add("shown");
+	if(shownElementId != null)
+	{
+		if(id == shownElementId)
+		{
+			element.classList.remove("shown");
+			document.getElementById("general-info").classList.remove("down")
+			shownElementId = null;
+		}
+		else
+		{
+			document.getElementById(shownElementId).classList.remove("shown")
+			element.classList.add("shown");
+			shownElementId = id;
+		}
 	}
 	else {
-		element.classList.remove("shown");
+		element.classList.add("shown");
+		shownElementId = id;
+		document.getElementById("general-info").classList.add("down")
 	}
 }
