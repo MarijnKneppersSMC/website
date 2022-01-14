@@ -2,7 +2,6 @@ function embedHTML() {
 
 	// get a list of all HTML elements
 	let elements = document.getElementsByTagName("*");
-	console.log(elements)
 
 	// start a loop that kiios over all html elements
 	for (let i = 0; i < elements.length; i++) {
@@ -19,7 +18,7 @@ function embedHTML() {
 			xhttp.onreadystatechange = function () {
 				if (this.readyState == 4) {
 					if (this.status == 200) { element.innerHTML = this.responseText; }
-					if (this.status == 404) { element.innerHTML = "Page not found."; }
+					if (this.status == 404) { element.innerHTML = "Page not found."; console.error(`${file} could not be found`) }
 					element.removeAttribute("embed-html");
 					embedHTML();
 				}
