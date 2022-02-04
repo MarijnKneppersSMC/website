@@ -16,6 +16,8 @@
 
 	<link rel="stylesheet" href="stylesheets/main.css" />
 
+  <link rel="stylesheet" href="stylesheets/about-us.css" />
+
 </head>
 
 <body>
@@ -28,6 +30,8 @@
 
 		<button class="underlineable" onclick="showPopUps(`limitations`); updateUnderline('limitations-underline');">Limitations<span class="underline" id="limitations-underline" style="background-color:#90c53f;"></span></button>
 
+
+		<!-- todo find better name for button -->
 		<button class="underlineable" onclick="showPopUps(`applications-of-machine-learning`); updateUnderline('applications-of-machine-learning-underline')">Applications of Machine Learning<span class="underline" id="applications-of-machine-learning-underline" style="background-color:#90c53f;"></span></button>
 
 	</div>
@@ -40,12 +44,15 @@
 
 	<article id="general-info" embed-html="documents/text/generalInfo.html"></article>
 
-	<article class="modal-data" embed-html="documents/text/Tijmen.html"></article>
+	<article id="about-tijmen" class="modal-data" embed-html="documents/text/Tijmen.html"></article>
 
-	<article class="modal-data" embed-html="documents/text/Marijn.html"></article>
+	<article id="about-marijn" class="modal-data" embed-html="documents/text/Marijn.html"></article>
+
+	<div id="glass-pane" class="glass-pane"></div>
 
 	<article id="modal" class="modal">
-	<article id="modal-dialogue" embed-html="documents/text/Tijmen.html"></article>
+		<button onclick="toggleModal()">close</button>
+		<article id="modal-dialogue"></article>
 	</article>
 
 	<script>
