@@ -1,14 +1,19 @@
 *
 {
 	text-align: center;
+	overflow-x: hidden;
 }
 
 #general-info {
 	margin: auto;
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 3px;
 	width: 75%;
+    background-color: rgb(241, 239, 239);
 	opacity: 1;
 	z-index: 100;
-	transition: all 0.125s ease-in-out;
+	transition: all 0.125s ease-in-out, display .5s linear;
 }
 
 .underlineable{
@@ -35,29 +40,9 @@
 }
 
 body {
-	margin: 0;
+	width: 100;
+	margin-top: 2%;
 	background: white;
-	overflow-x: hidden;
-}
-
-.popup
-{
-	opacity: 0;
-	transition: opacity 0.5s linear;
-	margin-top: 10px;
-	position: absolute;
-	width: 100%;
-	z-index: -100;
-	text-align: center;
-	visibility: hidden;
-	display: none;
-}
-
-.popup.shown {
-	opacity: 1;
-	z-index: 100;
-	visibility: visible;
-	display: inherit;
 }
 
 .modal-data
@@ -66,16 +51,17 @@ body {
 }
 
 .modal {
+	pointer-events: none;
 	opacity: 0;
     position: absolute;
-    z-index: -1000;
+    z-index: 1000;
     background: red;
     border-radius: 20px;
     border: 2px solid black;
 	margin-top: 20px;
     left: 50%;
     top: 50%;
-    transition: opacity .25s linear;
+    transition: opacity .25s linear, display .25s linear;
     transform: translateX(-50%) translateY(-50%);
     overflow: hidden;
     box-shadow: 0 0 100px 10px black inset;
@@ -84,6 +70,7 @@ body {
 
 .modal.open
 {
+	pointer-events: all;
 	opacity: 100;
 	z-index: 1000;
 }
@@ -92,7 +79,7 @@ body {
 {
 	left: 50%;
     top: 50%;
-    transition: opacity .25s linear;
+    transition: opacity .25s linear, display .25s linear;
     transform: translateX(-50%) translateY(-50%);
 	background: rgba(0, 102, 255, 0.5);
 	z-index: 110;

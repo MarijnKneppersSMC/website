@@ -1,0 +1,25 @@
+.underline {
+	background-color: #90c53f; 
+}
+
+.popup
+{
+	opacity: 0;
+	transition: opacity .5s lar, display .5s linear;
+	margin: auto;
+	width: 75%;
+	z-index: -100;
+	text-align: center;
+	display:none;
+}
+
+.popup.shown {
+	opacity: 1;
+	z-index: 100;
+	visibility: visible;
+	display: inherit;
+	border: 3px;
+	border-style: solid;
+	background-color: rgb(241, 239, 239);
+	margin-top: 10px;
+}

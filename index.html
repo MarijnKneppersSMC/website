@@ -18,23 +18,31 @@
 
   <link rel="stylesheet" href="stylesheets/about-us.css" />
 
+  <link rel="stylesheet" href="stylesheets/popup.css" />
+
+    
 </head>
 
 <body>
 
-	<h1>Machine Learning</h1>
+	<header>
+		<h1>Machine Learning</h1>
+	</header>
 
-	<div id="buttons">
+	<nav id="buttons">
 
-		<button class="underlineable" onclick="showPopUps(`about-us`); updateUnderline('about-us-underline')">About Us<span id="about-us-underline" class="underline" style="background-color:#90c53f;"></span></button>
 
-		<button class="underlineable" onclick="showPopUps(`limitations`); updateUnderline('limitations-underline');">Limitations<span class="underline" id="limitations-underline" style="background-color:#90c53f;"></span></button>
+		<button class="underlineable" onclick="showPopUps(`about-us`); updateUnderline('about-us-underline')">About Us<span class="underline" id="about-us-underline"></button>
+    
+		<button class="underlineable" onclick="showPopUps(`limitations`); updateUnderline('limitations-underline');">Limitations<span class="underline" id="limitations-underline"></span></button>
 
 
 		<!-- todo find better name for button -->
-		<button class="underlineable" onclick="showPopUps(`applications-of-machine-learning`); updateUnderline('applications-of-machine-learning-underline')">Applications of Machine Learning<span class="underline" id="applications-of-machine-learning-underline" style="background-color:#90c53f;"></span></button>
+		<button class="underlineable" onclick="showPopUps(`applications-of-machine-learning`); updateUnderline('applications-of-machine-learning-underline')">Applications of Machine Learning<span class="underline" id="applications-of-machine-learning-underline"></span></button>
 
-	</div>
+		<button class="underlineable" onclick="showPopUps(`contact-us`); updateUnderline('contact-us-underline')">Contact Us<span class="underline" id="contact-us-underline"></button>
+
+	</nav>
 
 	<article id="about-us" embed-html="aboutUs.html" class="popup"></article>
 
@@ -43,6 +51,8 @@
 	<article id="applications-of-machine-learning" embed-html="documents/text/applicationsOfMachineLearning.html" class="popup"></article>
 
 	<article id="general-info" embed-html="documents/text/generalInfo.html"></article>
+
+	<form id="contact-us" embed-html="documents/text/contact-us.html" class="popup"></form>
 
 	<article id="about-tijmen" class="modal-data" embed-html="documents/text/Tijmen.html"></article>
 
