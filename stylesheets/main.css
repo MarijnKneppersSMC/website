@@ -72,7 +72,6 @@ body {
 {
 	pointer-events: all;
 	opacity: 100;
-	z-index: 1000;
 }
 
 .glass-pane
