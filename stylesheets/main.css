@@ -50,6 +50,8 @@ h1 {
 }
 
 body {
+	width: 90%;
+	margin: auto;
 	margin-top: 2%;
 	background: rgb(23, 70, 124);
 }

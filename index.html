@@ -23,19 +23,22 @@
 	<link rel="stylesheet" href="stylesheets/modal.css" />
 
 	<link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     
 </head>
 
 <body>
 
 	<header>
+
 		<img id="logo" src="images/logo.png"></img>
+		
 		<h1 id="title">Machine Learning</h1>
 		
 	</header>
 
 	<nav id="buttons">
-
 
 		<button class="underlineable" onclick="showPopUps(`about-us`); updateUnderline('about-us-underline')">About Us<span class="underline" id="about-us-underline"></button>
     
@@ -66,8 +69,11 @@
 	<div id="glass-pane" class="glass-pane"></div>
 
 	<article id="modal" class="modal">
+
 		<button id="closeModalButton" onclick="toggleModal()">x</button>
+
 		<article id="modal-dialogue"></article>
+
 	</article>
 
 	<script>

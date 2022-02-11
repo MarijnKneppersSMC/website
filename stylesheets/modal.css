@@ -21,6 +21,12 @@
 	width: 80vw;
 }
 
+@media only screen and (max-height: 450px) {
+	.modal {
+		top: 80%;
+	}
+}
+
 .modal.open
 {
 	pointer-events: all;
