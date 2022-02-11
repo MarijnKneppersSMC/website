@@ -31,6 +31,7 @@ fieldset {
 	margin: 0 auto;
 	width: 0;
 	transition: width .25s linear;
+	background-color: rgb(100, 100, 100); 
 }
 
 *:hover>.underline, .active {
@@ -49,7 +50,6 @@ h1 {
 }
 
 body {
-	width: 100; 
 	margin-top: 2%;
 	background: rgb(23, 70, 124);
 }
@@ -66,4 +66,8 @@ button {
 
 #title {
 	margin-top: 0px;
+}
+
+#modal-activator {
+	margin-bottom: 5px;
 }

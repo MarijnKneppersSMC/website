@@ -52,11 +52,12 @@
     width: 40px;
     line-height: 20px;
     margin: 0;
-    border: 2px solid white;
+    border: 2px solid black;
     border-top-color: transparent !important;
     border-right-color: transparent !important;
     border-bottom-left-radius: 20px;
     cursor: pointer;
+	font-size: 15px;
 }
 
 #modal-dialogue p {
