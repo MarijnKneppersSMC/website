@@ -1,0 +1,67 @@
+.modal-data
+{
+	display: none;
+}
+
+.modal {
+	pointer-events: none;
+	opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    background: red;
+    border-radius: 20px;
+    border: 2px solid black;
+	margin-top: 20px;
+    left: 50%;
+    top: 50%;
+    transition: opacity .25s linear, display .25s linear;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px black inset;
+	width: 80vw;
+}
+
+.modal.open
+{
+	pointer-events: all;
+	opacity: 100;
+}
+
+.glass-pane
+{
+    transition: opacity .25s linear, display .25s linear;
+	background: rgba(0, 102, 255, 0.5);
+	z-index: 110;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+	display: none;
+}
+
+.glass-pane.shown
+{
+	display: inherit;
+}
+
+#closeModalButton {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    line-height: 20px;
+    margin: 0;
+    border: 2px solid white;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+#modal-dialogue p {
+	color: rgb(250, 232, 235);
+	width: 90%;
+	margin: auto; 
+	margin-top: 2%; 
+}

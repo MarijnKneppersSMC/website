@@ -2,8 +2,7 @@
 	background-color: #90c53f; 
 }
 
-.popup
-{
+.popup {
 	opacity: 0;
 	transition: opacity .5s lar, display .5s linear;
 	margin: auto;
@@ -20,6 +19,6 @@
 	display: inherit;
 	border: 3px;
 	border-style: solid;
-	background-color: rgb(241, 239, 239);
+	background-color: rgb(181, 189, 226);
 	margin-top: 10px;
 }

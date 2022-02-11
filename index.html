@@ -20,13 +20,18 @@
 
 	<link rel="stylesheet" href="stylesheets/popup.css" />
 
+	<link rel="stylesheet" href="stylesheets/modal.css" />
+
+	<link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
     
 </head>
 
 <body>
 
 	<header>
-		<h1>Machine Learning</h1>
+		<img id="logo" src="images/logo.png"></img>
+		<h1 id="title">Machine Learning</h1>
+		
 	</header>
 
 	<nav id="buttons">
@@ -52,7 +57,7 @@
 
 	<article id="general-info" embed-html="documents/text/generalInfo.html"></article>
 
-	<form id="contact-us" embed-html="documents/text/contact-us.html" class="popup"></form>
+	<form id="contact-us" embed-html="documents/text/contact-us.html" class="popup" onsubmit="return false;"></form>
 
 	<article id="about-tijmen" class="modal-data" embed-html="documents/text/Tijmen.html"></article>
 
@@ -61,12 +66,12 @@
 	<div id="glass-pane" class="glass-pane"></div>
 
 	<article id="modal" class="modal">
-		<button onclick="toggleModal()">close</button>
+		<button id="closeModalButton" onclick="toggleModal()">close</button>
 		<article id="modal-dialogue"></article>
 	</article>
 
 	<script>
-		embedHTML()
+		embedHTML();
 	</script>
 
 </body>

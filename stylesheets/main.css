@@ -4,13 +4,18 @@
 	overflow-x: hidden;
 }
 
+fieldset {
+	border: 0; 
+}
+
 #general-info {
 	margin: auto;
 	margin-top: 10px;
 	border-style: solid;
 	border-width: 3px;
+	border-color: rgb(32, 32, 85);
 	width: 75%;
-    background-color: rgb(241, 239, 239);
+    background-color: rgb(181, 189, 226);
 	opacity: 1;
 	z-index: 100;
 	transition: all 0.125s ease-in-out, display .5s linear;
@@ -39,56 +44,26 @@
 	display: none;
 }
 
+h1 {
+	color: rgb(163, 167, 162);
+}
+
 body {
-	width: 100;
+	width: 100; 
 	margin-top: 2%;
-	background: white;
+	background: rgb(23, 70, 124);
 }
 
-.modal-data
-{
-	display: none;
+button {
+	cursor: pointer;
+	background-color: rgb(59, 59, 87);
+	color: rgb(252, 252, 252);
 }
 
-.modal {
-	pointer-events: none;
-	opacity: 0;
-    position: absolute;
-    z-index: 1000;
-    background: red;
-    border-radius: 20px;
-    border: 2px solid black;
-	margin-top: 20px;
-    left: 50%;
-    top: 50%;
-    transition: opacity .25s linear, display .25s linear;
-    transform: translateX(-50%) translateY(-50%);
-    overflow: hidden;
-    box-shadow: 0 0 100px 10px black inset;
-	width: 80vw;
+#logo {
+	top: 0;
 }
 
-.modal.open
-{
-	pointer-events: all;
-	opacity: 100;
-}
-
-.glass-pane
-{
-	left: 50%;
-    top: 50%;
-    transition: opacity .25s linear, display .25s linear;
-    transform: translateX(-50%) translateY(-50%);
-	background: rgba(0, 102, 255, 0.5);
-	z-index: 110;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	display: none;
-}
-
-.glass-pane.shown
-{
-	display: inherit;
+#title {
+	margin-top: 0px;
 }
