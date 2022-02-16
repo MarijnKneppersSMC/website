@@ -9,6 +9,7 @@ fieldset {
 }
 
 #general-info {
+	pointer-events: all;
 	margin: auto;
 	margin-top: 10px;
 	border-style: solid;
@@ -17,8 +18,18 @@ fieldset {
 	width: 75%;
     background-color: rgb(181, 189, 226);
 	opacity: 1;
-	z-index: 100;
-	transition: all 0.125s ease-in-out, display .5s linear;
+	
+}
+
+table, th, td{
+	border: 1px solid black;
+	margin: auto;
+}
+
+#general-info.down {
+	pointer-events: none;
+	opacity: 0;
+	display: none;
 }
 
 .underlineable{
@@ -38,20 +49,11 @@ fieldset {
 	width: 100%;
 }
 
-#general-info.down {
-	opacity: 0;
-	z-index: -100;
-	transform: translateY(10vh);
-	display: none;
-}
-
 h1 {
 	color: rgb(163, 167, 162);
 }
 
 body {
-	width: 90%;
-	margin: auto;
 	margin-top: 2%;
 	background: rgb(23, 70, 124);
 }
@@ -72,4 +74,8 @@ button {
 
 #modal-activator {
 	margin-bottom: 5px;
+}
+
+li {
+	list-style-position: inside;
 }

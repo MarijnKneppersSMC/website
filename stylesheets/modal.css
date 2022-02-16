@@ -35,7 +35,8 @@
 
 .glass-pane
 {
-    transition: opacity .25s linear, display .25s linear;
+	pointer-events: none;
+    transition: opacity .25s linear;
 	background: rgba(0, 102, 255, 0.5);
 	z-index: 110;
 	position: fixed;
@@ -43,12 +44,13 @@
     height: 100%;
     top: 0px;
     left: 0px;
-	display: none;
+	opacity: 0;
 }
 
 .glass-pane.shown
 {
-	display: inherit;
+	pointer-events: all;
+	opacity: 1;
 }
 
 #closeModalButton {
@@ -71,4 +73,16 @@
 	width: 90%;
 	margin: auto; 
 	margin-top: 2%; 
+}
+
+ol{
+	text-color: rgb(250, 232, 235);
+	text-align: center;
+	margin: auto;
+}
+
+ul{
+	text-color: rgb(250, 232, 235); 
+	text-align: center;
+	margin: auto;
 }
