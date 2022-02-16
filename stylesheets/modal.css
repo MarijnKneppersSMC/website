@@ -6,12 +6,13 @@
 .modal {
 	pointer-events: none;
 	opacity: 0;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     background: red;
     border-radius: 20px;
     border: 2px solid black;
-	margin-top: 20px;
+	margin-top: 0px;
+	padding-bottom: 20px;
     left: 50%;
     top: 50%;
     transition: opacity .25s linear, display .25s linear;
@@ -19,12 +20,6 @@
     overflow: hidden;
     box-shadow: 0 0 100px 10px black inset;
 	width: 80vw;
-}
-
-@media only screen and (max-height: 450px) {
-	.modal {
-		top: 80%;
-	}
 }
 
 .modal.open
@@ -76,13 +71,8 @@
 }
 
 ol{
-	text-color: rgb(250, 232, 235);
-	text-align: center;
-	margin: auto;
-}
-
-ul{
-	text-color: rgb(250, 232, 235); 
-	text-align: center;
-	margin: auto;
+	color: rgb(250, 232, 235);
+	display: table;
+	margin: 0 auto;
+	
 }
