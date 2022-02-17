@@ -77,8 +77,13 @@
 {
 	color: rgb(250, 232, 235);
 	width: 90%;
-	margin: auto; 
-	margin-top: 2%; 
+	margin: auto;
+}
+
+#modal-dialogue
+{
+	margin-top: 23px;
+	margin-bottom: 23px;
 }
 
 ol

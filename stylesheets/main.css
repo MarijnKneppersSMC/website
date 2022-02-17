@@ -96,3 +96,17 @@ li
 	list-style-position: inside;
 	text-align: left;
 }
+
+.video
+{
+	width: 560px;
+	height: 315px;
+}
+
+@media (max-width: 420px)
+{
+	.video
+	{
+		width: 100%;
+	}
+}
