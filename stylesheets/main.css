@@ -4,11 +4,13 @@
 	overflow-x: hidden;
 }
 
-fieldset {
+fieldset
+{
 	border: 0; 
 }
 
-#general-info {
+#general-info
+{
 	pointer-events: all;
 	margin: auto;
 	margin-top: 10px;
@@ -21,22 +23,26 @@ fieldset {
 	
 }
 
-table, th, td{
+table, th, td
+{
 	border: 1px solid black;
 	margin: auto;
 }
 
-#general-info.down {
+#general-info.down
+{
 	pointer-events: none;
 	opacity: 0;
 	display: none;
 }
 
-.underlineable{
+.underlineable
+{
 	display: inline-block;
 }
 
-.underline {
+.underline
+{
 	display: block;
 	height: 2px;
 	margin: 0 auto;
@@ -45,38 +51,48 @@ table, th, td{
 	background-color: rgb(100, 100, 100); 
 }
 
-*:hover>.underline, .active {
+*:hover>.underline, .active
+{
 	width: 100%;
 }
 
-h1 {
+h1
+{
 	color: rgb(163, 167, 162);
 }
 
-body {
+body
+{
 	margin-top: 2%;
 	background: rgb(23, 70, 124);
 }
 
-button {
+button
+{
 	cursor: pointer;
 	background-color: rgb(59, 59, 87);
 	color: rgb(252, 252, 252);
 }
 
-#logo {
+#logo
+{
 	top: 0;
+	width: 72px;
+	height: 72px;
 }
 
-#title {
+#title
+{
 	margin-top: 0px;
 }
 
-#modal-activator {
+#modal-activator
+{
 	margin-bottom: 5px;
 }
 
-li {
+li
+{
 	list-style-position: inside;
 	text-align: left;
 }

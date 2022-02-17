@@ -1,26 +1,33 @@
-function toggleModal()
-{
+function toggleModal() {
+
 	let modal = document.getElementById("modal");
 
-	let glass = document.getElementById("glass-pane")
+	let glass = document.getElementById("glass-pane");
 
-	if(modal.classList.contains("open"))
-	{
+	if (modal.classList.contains("open")) {
+
 		modal.classList.remove("open");
+
 		glass.classList.remove("shown");
+
 	}
-	else
-	{
+
+	else {
+
 		modal.classList.add("open");
+
 		glass.classList.add("shown");
+
 	}
+
 }
 
-function setModalContent(id)
-{
+function setModalContent(id) {
+
 	let dialogue = document.getElementById("modal-dialogue");
 
 	let data = document.getElementById(id);
 
 	dialogue.innerHTML = data.innerHTML;
+
 }
