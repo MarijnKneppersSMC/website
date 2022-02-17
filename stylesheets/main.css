@@ -67,11 +67,12 @@ body
 	background: rgb(23, 70, 124);
 }
 
-button
+button, .clickable
 {
 	cursor: pointer;
 	background-color: rgb(59, 59, 87);
 	color: rgb(252, 252, 252);
+	width: 126px;
 }
 
 #logo
