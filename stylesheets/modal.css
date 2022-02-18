@@ -30,11 +30,6 @@
 	opacity: 100;
 }
 
-#modal-dialogue {
-	overflow-y: auto;
-	max-height: 80vh;
-}
-
 .glass-pane
 {
 	pointer-events: none;
@@ -55,6 +50,12 @@
 	touch-action: all;
 	pointer-events: all;
 	opacity: 1;
+}
+
+#modal-dialogue
+{
+	overflow-y: auto;
+	max-height: 80vh;
 }
 
 #closeModalButton
@@ -84,11 +85,4 @@
 {
 	margin-top: 23px;
 	margin-bottom: 23px;
-}
-
-ol
-{
-	color: rgb(250, 232, 235);
-	display: table;
-	margin: 0 auto;
 }

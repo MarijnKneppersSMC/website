@@ -4,23 +4,15 @@
 	overflow-x: hidden;
 }
 
+body
+{
+	margin-top: 2%;
+	background: rgb(23, 70, 124);
+}
+
 fieldset
 {
 	border: 0; 
-}
-
-#general-info
-{
-	pointer-events: all;
-	margin: auto;
-	margin-top: 10px;
-	border-style: solid;
-	border-width: 3px;
-	border-color: rgb(32, 32, 85);
-	width: 75%;
-    background-color: rgb(181, 189, 226);
-	opacity: 1;
-	
 }
 
 table, th, td
@@ -29,11 +21,30 @@ table, th, td
 	margin: auto;
 }
 
-#general-info.down
+h1
 {
-	pointer-events: none;
-	opacity: 0;
-	display: none;
+	color: rgb(163, 167, 162);
+}
+
+ol
+{
+	color: rgb(250, 232, 235);
+	display: table;
+	margin: 0 auto;
+}
+
+li
+{
+	list-style-position: inside;
+	text-align: left;
+}
+
+button, .clickable
+{
+	cursor: pointer;
+	background-color: rgb(59, 59, 87);
+	color: rgb(252, 252, 252);
+	width: 126px;
 }
 
 .underlineable
@@ -56,23 +67,39 @@ table, th, td
 	width: 100%;
 }
 
-h1
+.video
 {
-	color: rgb(163, 167, 162);
+	width: 560px;
+	height: 315px;
 }
 
-body
+@media (max-width: 420px)
 {
-	margin-top: 2%;
-	background: rgb(23, 70, 124);
+	.video
+	{
+		width: 100%;
+	}
 }
 
-button, .clickable
+#general-info.down
 {
-	cursor: pointer;
-	background-color: rgb(59, 59, 87);
-	color: rgb(252, 252, 252);
-	width: 126px;
+	pointer-events: none;
+	opacity: 0;
+	display: none;
+}
+
+#general-info
+{
+	pointer-events: all;
+	margin: auto;
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(32, 32, 85);
+	width: 75%;
+    background-color: rgb(181, 189, 226);
+	opacity: 1;
+	
 }
 
 #logo
@@ -90,24 +117,4 @@ button, .clickable
 #modal-activator
 {
 	margin-bottom: 5px;
-}
-
-li
-{
-	list-style-position: inside;
-	text-align: left;
-}
-
-.video
-{
-	width: 560px;
-	height: 315px;
-}
-
-@media (max-width: 420px)
-{
-	.video
-	{
-		width: 100%;
-	}
 }
