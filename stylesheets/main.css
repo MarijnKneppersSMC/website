@@ -89,6 +89,13 @@ button, .clickable
 	}
 }
 
+@media (max-width: 310px)
+{
+	.navbutton {
+		font-size: 40%;
+	}
+}
+
 .underlineable
 {
 	display: inline-block;
